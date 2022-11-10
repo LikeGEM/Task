@@ -111,9 +111,6 @@ function Check() {
     
 }
 
-
-
-
 function testGoogle(pname) {
     return new Promise((resolve, reject) => {
         const url = `https://www.google.com/maps/timeline`;
