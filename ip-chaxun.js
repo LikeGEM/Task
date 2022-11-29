@@ -1,3 +1,13 @@
+/******************************
+
+#ip查询
+
+[task_local]
+
+event-interaction https://raw.githubusercontent.com/LikeGEM/Task/main/ip-chaxun.js, tag=IP 查询, img-url=https://raw.githubusercontent.com/LovedGM/Quantumult-X-TuBiao/main/dongzuo/dz7.png, enabled=true
+
+*******************************/
+
 var title = '        🔎 IP Info'
 
 $task.fetch({
