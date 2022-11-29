@@ -10,7 +10,7 @@ For Quantumult-X 598+ ONLY!!
 [task_local]
 
 // UI 查询版本
-event-interaction https://raw.githubusercontent.com/LikeGEM/Task/main/DSNJC.js, tag=Disneyᐩ 检测&切换, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney.png, enabled=true
+event-interaction https://raw.githubusercontent.com/LikeGEM/Task/main/Disney-jiance.js, tag=Disneyᐩ 检测&切换, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney.png, enabled=true
 
 //cron 版本
 0 8 * * * https://raw.githubusercontent.com/LikeGEM/Task/main/DSNJC.js#policy=你的策略组名, tag=Disneyᐩ 定时切换, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney.png, enabled=true
