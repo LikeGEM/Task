@@ -1,8 +1,13 @@
-/*
+/******************************
 
-#清空购物车
+#京东清空购物车
 
- */
+[task_local]
+
+0 0 1 5 * https://raw.githubusercontent.com/LikeGEM/Task/main/JD-qingkonggouwuche.js, tag=清空购物车, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+
+*******************************/
+
 const $ = new Env('清空购物车');
 //Node.js用户请在jdCookie.js处填写京东ck;
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
