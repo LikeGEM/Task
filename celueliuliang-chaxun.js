@@ -4,7 +4,7 @@ For Quantumult-X 631+ ONLY!!
 
 [task_local]
 
-event-interaction https://raw.githubusercontent.com/LikeGEM/Task/main/CLLL.js, tag=策略流量查询, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Download.png, enabled=true
+event-interaction https://raw.githubusercontent.com/LikeGEM/Task/main/celueliuliang-chaxun.js, tag=策略流量查询, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Download.png, enabled=true
 
 ps. 简单查询策略/策略组流量使用统计（仅支持一/二级策略）
 
