@@ -12,7 +12,7 @@ For Quantumult-X 598+ ONLY!!
 
 [task_local]
 
-event-interaction https://raw.githubusercontent.com/LikeGEM/Task/main/LMTJC.js, tag=流媒体-解锁查询, img-url=checkmark.seal.system, enabled=true
+event-interaction https://raw.githubusercontent.com/LikeGEM/Task/main/liumeiti-jiance.js, tag=流媒体-解锁查询, img-url=checkmark.seal.system, enabled=true
 
 @XIAO_KOP
 
