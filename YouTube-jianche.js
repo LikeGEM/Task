@@ -5,10 +5,10 @@ For Quantumult-X 598+ ONLY!!
 [task_local]
 
 // UI 查询版本
-event-interaction https://raw.githubusercontent.com/LikeGEM/Task/main/YGJC.js, tag=YouTube 切换, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube_Letter.png, enabled=true
+event-interaction https://raw.githubusercontent.com/LikeGEM/Task/main/YouTube-jianche.js, tag=YouTube 切换, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube_Letter.png, enabled=true
 
 // cron task 版本
-0 8 * * * https://raw.githubusercontent.com/LikeGEM/Task/main/YGJC.js#policy=你的策略组, tag=YouTube 定时切换, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube_Letter.png, enabled=true
+0 8 * * * https://raw.githubusercontent.com/LikeGEM/Task/main/YouTube-jianche.js#policy=你的策略组, tag=YouTube 定时切换, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube_Letter.png, enabled=true
 
 ps. 简单粗暴的 UI-Interaction 版本。无数据持久化、粗暴延迟等待。完美主义建议使用 Helge大佬的boxjs版本 https://t.me/QuanXNews/193
 
@@ -16,7 +16,7 @@ ps. 简单粗暴的 UI-Interaction 版本。无数据持久化、粗暴延迟等
 
 2022-07-04
 
-**/
+***/
 
 const BASE_URL = 'https://www.youtube.com/premium'
 
