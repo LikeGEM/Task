@@ -5,10 +5,10 @@ For Quantumult-X 598+ ONLY!!
 [task_local]
 
 // UI 入口切换版本
-event-interaction https://raw.githubusercontent.com/LikeGEM/Task/main/GGSZJC.js, tag=Google Sifter, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png, enabled=true
+event-interaction https://raw.githubusercontent.com/LikeGEM/Task/main/Google-jiance.js, tag=Google Sifter, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png, enabled=true
 
 // Cron 定时切换版本
-0 8 * * * https://raw.githubusercontent.com/LikeGEM/Task/main/GGSZJC.js#policy=你的策略组名, tag=Google 送中定时切换, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png, enabled=true
+0 8 * * * https://raw.githubusercontent.com/LikeGEM/Task/main/Google-jiance.js#policy=你的策略组名, tag=Google 送中定时切换, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png, enabled=true
 
 
 ps. 简单粗暴的 UI-Interaction 版本。无数据持久化、粗暴延迟等待。完美主义建议使用 Helge大佬的boxjs版本 https://t.me/QuanXNews/193
