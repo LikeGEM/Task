@@ -1,4 +1,4 @@
-/***
+/********************
 
 Thanks to & modified from 
 1. https://gist.githubusercontent.com/Hyseen/b06e911a41036ebc36acf04ddebe7b9a/raw/nf_check.js
@@ -14,9 +14,9 @@ For Quantumult-X 598+ ONLY!!
 
 event-interaction https://raw.githubusercontent.com/LikeGEM/Task/main/liumeiti-jiance.js, tag=流媒体-解锁查询, img-url=checkmark.seal.system, enabled=true
 
-@XIAO_KOP
+#@XIAO_KOP
 
-**/
+********************/
 
 const BASE_URL = 'https://www.netflix.com/title/';
 const BASE_URL_YTB = "https://www.youtube.com/premium";
