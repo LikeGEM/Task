@@ -3,10 +3,10 @@
 For Quantumult-X 598+ ONLY!!
 
 [task_local]
-event-interaction https://raw.githubusercontent.com/LikeGEM/Task/main/Youtube-AD.js, tag=YouTube 广告检测, img-url= https://github.com/LikeGEM/TuBiao/raw/main/Icons/YouTube.png, enabled=true
+event-interaction https://raw.githubusercontent.com/LovedGM/Task/main/YT-AD.js, tag=YouTube 广告检测, img-url= https://github.com/LikeGEM/TuBiao/raw/main/Icons/YouTube.png, enabled=true
 
 // Cron 定时切换版本
-0 8 * * * https://raw.githubusercontent.com/LikeGEM/Task/main/Youtube-AD.js#policy=你的策略组名, tag= YouTube 广告检测定时切换, img-url= https://github.com/LikeGEM/TuBiao/raw/main/Icons/YouTube.png, enabled=true
+0 8 * * * https://raw.githubusercontent.com/LovedGM/Task/main/YT-AD.js#policy=你的策略组名, tag= YouTube 广告检测定时切换, img-url= https://github.com/LikeGEM/TuBiao/raw/main/Icons/YouTube.png, enabled=true
 
 基于@XIAO_KOP大佬的Google送中检测脚本修改。
 1:修改了判断逻辑，检测切换送中的节点。
@@ -84,13 +84,22 @@ function Check() {
         console.log(ErrorList)
         const dict = { [policy] : NoList[1]};
         if(NoList[1]) {
-            console.log("选定支持去广告节点："+NoList[1])
+            console.log("选定支持去广告节点："+NoList[1]);
         }
         const mes1 = {
             action: "set_policy_state",
             content: dict
         }; 
-        $configuration.sendMessage(mes1).then(resolve => {
+        //再改这里********************
+        
+        if(NoList.length == 1){
+            $notify("YouTube去广告节点检测", "没有去广告节点可用", "这里是空的"); 
+        }else{
+            
+      $notify("YouTube去广告节点检测", "已切换至去广告节点", NoList[1]); 
+        }
+          
+  $configuration.sendMessage(mes1).then(resolve => {
             if (resolve.error) {
                 console.log(resolve.error);
                 content =pflag==0 && NoList[1]? `<p style="text-align: center; font-family: -apple-system; font-size: large; font-weight: thin"><br><b> 🎉 该节点支持去广告 </b><br><br>👇<br><br><font color=#54B6FF>-------------------------<br><b>⟦ `+$environment.params+` ⟧ </b><br>-------------------------</font>` : `<p style="text-align: center; font-family: -apple-system; font-size: large; font-weight: thin"><br><b>😭 该节点<font color=#FF0000>不支持</font>去广告 </b><br><br>👇<br><br><font color=#54B6FF>-------------------------<br><b>⟦ `+$environment.params+` ⟧ </b><br>-------------------------</font>`
