@@ -85,7 +85,7 @@ const message = {
     result["Disney"] = "<b>Disneyᐩ:</b> 即将登陆 ➟ "+'⟦'+flags.get(region.toUpperCase())+"⟧ ⚠️"
   } else if (status==STATUS_AVAILABLE){
     //console.log(2)
-    result["Disney"] = "<b>Disneyᐩ:</b> 支持 ➟ "+'⟦'+flags.get(region.toUpperCase())+"⟧ 🎉"
+    result["Disney"] = "<b>Disneyᐩ: </b>支持"+arrow+ "⟦"+flags.get(region.toUpperCase())+"⟧ 🎉"
     console.log(result["Disney"])
   } else if (status==STATUS_NOT_AVAILABLE) {
     //console.log(3)
@@ -340,7 +340,7 @@ function testNf(filmId) {
       console.log("nf:"+response.statusCode)
       if (response.statusCode === 404) {
         
-        result["Netflix"] = "<b>Netflix: </b>支持自制剧集 ⚠️"
+        result["Netflix"] = "<b>Netflix : </b>仅支持自制剧集"+arrow+ "⟦"+flags.get(region.toUpperCase())+"⟧ ⚠️"
         console.log("nf:"+result["Netflix"])
         resolve('Not Found')
         return 
@@ -484,7 +484,7 @@ function testParam() {
     console.log("Paramountᐩ:"+response.statusCode)
     if (response.statusCode == 200) {
       //reject('Error')
-      result["Paramount"] = "<b>Paramountᐩ: </b>支持 🎉 "
+      result["Paramount"] = "<b>Paramountᐩ : </b>支持"+arrow+ "⟦"+flags.get(region.toUpperCase())+"⟧ 🎉"
     } else if (response.statusCode == 302) {
       //resolve('Not Available')
       result["Paramount"] = "<b>Paramountᐩ: </b>未支持 🚫"
@@ -534,7 +534,7 @@ function testDiscovery() {
         let data = JSON.parse(response.body)
         let locationd = data["data"]["attributes"]["currentLocationTerritory"]
         if (locationd == "us") {
-          result["Discovery"] = "<b>Discoveryᐩ: </b>支持 🎉 "
+          result["Discovery"] = "<b>Discoveryᐩ : </b>支持"+arrow+ "⟦"+flags.get(region.toUpperCase())+"⟧ 🎉"
           console.log("支持Discoveryᐩ")
           resolve("支持Discoveryᐩ")
           return
