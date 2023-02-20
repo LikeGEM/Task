@@ -93,7 +93,7 @@ function Check() {
         //再改这里********************
         
         if(NoList.length == 1){
-            $notify("YouTube去广告节点检测", "没有去广告节点可用", "这里是空的"); 
+            $notify("YouTube去广告节点检测", "😮‍💨没有去广告节点可用😮‍💨", "这里是空的"); 
         }else{
             
       $notify("YouTube去广告节点检测", "🎉已切换至去广告节点👇", NoList[1]); 
